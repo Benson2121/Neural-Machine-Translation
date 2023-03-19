@@ -1,0 +1,6 @@
+torch==1.13.1
+numpy==1.23.0
+pytest==7.1.2
+tqdm==4.64.0
+tensorboard==2.9.1
+wandb==0.13.9
