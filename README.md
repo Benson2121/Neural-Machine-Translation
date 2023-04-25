@@ -2,16 +2,16 @@
 
 ## Introduction
 
-### 1.Canadian Hansards
+### 1. Canadian Hansards
 The main corpus for this assignment comes from the official records (Hansards) of the 36th Canadian Parliament, including debates from both the House of Representatives and the Senate. This corpus has been split into Training/ and Testing/ directories.
 This data set consists of pairs of corresponding files (*.e is the English equivalent of the French *.f) in which every line is a sentence. Here, sentence alignment has already been performed for you. That is, the nth sentence in one file corresponds to the nth sentence in its corresponding file (e.g., line n in fubar.e is aligned with line n in fubar.f). Note that this data only consists of sentence pairs; many-to-one, many-to-many, and one-to-many alignments are not included.
 
 
-### 2.Seq2seq
+### 2. Seq2seq
 We will be implementing a simple seq2seq model, without attention, with single-headed attention, and with multi-headed attention based largely on the course material. You will train the models with teacher- forcing and decode using beam search. We will write it in [PyTorch version 1.13](https://pytorch.org/docs/1.13/), and Python version 3.10, which are the versions installed on the teach.cs servers. For those unfamiliar with PyTorch, we suggest you first read the [PyTorch tutorial](https://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html).
 
 
-### 3.Tensors and batches
+### 3. ensors and batches
 PyTorch, like many deep learning frameworks, operate with tensors, which are multi-dimensional arrays.
 When you work in PyTorch, you will rarely if ever work with just one bitext pair at a time. You’ll
 instead be working with multiple sequences in one tensor, organized along one dimension of the batch.
